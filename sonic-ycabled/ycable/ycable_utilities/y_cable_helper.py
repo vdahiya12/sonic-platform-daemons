@@ -3200,7 +3200,7 @@ def handle_hw_mux_cable_table_grpc_notification(fvp, hw_mux_cable_tbl, asic_inde
 
             ret, response = try_grpc(stub.SetAdminForwardingPortState, SET_ADMIN_FORWARDING_TIMEOUT, request)
             """
-            TODO some debug code
+            TODO remove some of this debug code
             future_obj = grpc.channel_ready_future(grpc_port_channels[port])
             try:
                 future_obj.result(timeout=0.1)
